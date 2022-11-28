@@ -1,5 +1,7 @@
 module.exports = {
   trailingSlash: false,
+  kit: {
+    floc: true}
   async headers() {
     return [
       {
@@ -7,7 +9,7 @@ module.exports = {
         source: '/:path*',
         headers: [
           { key: 'Access-Control-Allow-Credentials', value: 'true' },
-          { key: 'Access-Control-Allow-Origin', value: 'interest-cohort' },
+          { key: 'Access-Control-Allow-Origin', value: '*' },
           { key: 'Access-Control-Allow-Methods', value: 'POST' },
           { key: 'Access-Control-Allow-Headers', value: 'X-Playlog-Web', 'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version, Authorization' },
         ],
