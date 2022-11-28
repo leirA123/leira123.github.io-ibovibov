@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: false,
   kit: {
     floc: true}
   async headers() {
